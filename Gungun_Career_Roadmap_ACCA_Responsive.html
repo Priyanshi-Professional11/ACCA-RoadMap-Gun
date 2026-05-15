@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gungun's Career Roadmap — ACCA Path</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;600;700&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Source Sans 3',sans-serif;background:#f5f4f0;color:#1a1a1a;font-size:15px;line-height:1.7}
+  a{color:#1a5276;text-decoration:none}
+  .page{max-width:860px;margin:0 auto;padding:0 0 80px 0}
+
+  /* Header */
+  .hero{background:#0d2137;color:#fff;padding:52px 40px 44px;position:relative;overflow:hidden}
+  .hero::after{content:'ACCA';position:absolute;right:-20px;bottom:-30px;font-size:160px;font-weight:700;opacity:0.05;font-family:'Playfair Display',serif;color:#fff;line-height:1}
+  .hero-tag{display:inline-block;background:rgba(255,255,255,0.12);color:#cce4ff;font-size:12px;letter-spacing:1.5px;padding:4px 12px;border-radius:4px;margin-bottom:14px;text-transform:uppercase}
+  .hero h1{font-family:'Playfair Display',serif;font-size:38px;font-weight:700;line-height:1.2;margin-bottom:10px}
+  .hero h1 span{color:#5eb8ff}
+  .hero-sub{color:#90b8d6;font-size:15px;font-weight:300;max-width:520px}
+  .hero-meta{display:flex;gap:24px;margin-top:28px;flex-wrap:wrap}
+  .meta-item{display:flex;align-items:center;gap:7px;color:#b0cfe0;font-size:13px}
+  .meta-dot{width:8px;height:8px;border-radius:50%;background:#5eb8ff;flex-shrink:0}
+
+  /* Navigation */
+  .nav{background:#fff;border-bottom:1px solid #e2e0da;position:sticky;top:0;z-index:100;padding:0 40px}
+  .nav-inner{display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+  .nav-inner::-webkit-scrollbar{display:none}
+  .nav-item{padding:14px 18px;font-size:13px;font-weight:600;color:#888;border-bottom:3px solid transparent;cursor:pointer;white-space:nowrap;transition:all 0.2s}
+  .nav-item:hover{color:#0d2137}
+  .nav-item.active{color:#0d2137;border-bottom-color:#5eb8ff}
+
+  /* Content */
+  .content{padding:0 40px}
+
+  /* Section headers */
+  .section{padding-top:60px}
+  .section-label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#888;font-weight:600;margin-bottom:6px}
+  .section-title{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:#0d2137;margin-bottom:6px}
+  .section-desc{font-size:15px;color:#555;font-weight:300;margin-bottom:28px;max-width:640px}
+
+  /* Phase banner */
+  .phase-banner{border-radius:10px;padding:22px 26px;margin-bottom:8px;display:flex;align-items:flex-start;gap:18px}
+  .phase-banner.p0{background:#fff3e0;border-left:5px solid #e67e22}
+  .phase-banner.p1{background:#e8f4fd;border-left:5px solid #2980b9}
+  .phase-banner.p2{background:#eafaf1;border-left:5px solid #27ae60}
+  .phase-banner.p3{background:#f5eef8;border-left:5px solid #8e44ad}
+  .phase-banner.p4{background:#fdfefe;border-left:5px solid #1abc9c}
+  .phase-banner.p5{background:#fef9e7;border-left:5px solid #f1c40f}
+  .phase-banner.p6{background:#fdedec;border-left:5px solid #e74c3c}
+  .phase-banner.p7{background:#eaf2ff;border-left:5px solid #0d2137}
+  .phase-num{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;opacity:0.6;margin-bottom:3px}
+  .phase-title{font-size:17px;font-weight:700;color:#0d2137}
+  .phase-timeline{font-size:12px;color:#666;margin-top:2px}
+
+  /* Cards grid */
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}
+  .card{background:#fff;border:1px solid #e8e6e0;border-radius:10px;padding:20px}
+  .card-icon{font-size:20px;margin-bottom:10px}
+  .card h4{font-size:14px;font-weight:700;color:#0d2137;margin-bottom:6px}
+  .card p,card li{font-size:13.5px;color:#444;line-height:1.6}
+  .card ul{padding-left:16px;margin-top:6px}
+  .card ul li{margin-bottom:4px;font-size:13px;color:#444}
+  .card-full{grid-column:1/-1}
+
+  /* Alert boxes */
+  .alert{border-radius:8px;padding:18px 20px;margin:14px 0;border-left:4px solid}
+  .alert-critical{background:#fff8f0;border-color:#e67e22}
+  .alert-critical h4{color:#c0392b;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:6px}
+  .alert-info{background:#eaf4fe;border-color:#2980b9}
+  .alert-info h4{color:#1a5276;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:6px}
+  .alert-success{background:#eafaf1;border-color:#27ae60}
+  .alert-success h4{color:#1e8449;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:6px}
+  .alert p,alert li{font-size:13.5px;color:#333;line-height:1.65}
+  .alert ul{padding-left:18px;margin-top:6px}
+  .alert ul li{margin-bottom:5px;font-size:13.5px;color:#333}
+
+  /* Tables */
+  .tbl-wrap{overflow-x:auto;margin:16px 0;border-radius:8px;border:1px solid #e2e0da}
+  table{width:100%;border-collapse:collapse;background:#fff}
+  thead th{background:#0d2137;color:#fff;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.8px;padding:10px 14px;text-align:left}
+  tbody td{padding:10px 14px;font-size:13.5px;color:#333;border-bottom:1px solid #f0eeea;vertical-align:top}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:nth-child(even){background:#fafaf8}
+  .badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px}
+  .badge-green{background:#d5f5e3;color:#1e8449}
+  .badge-blue{background:#d6eaf8;color:#1a5276}
+  .badge-orange{background:#fdebd0;color:#a04000}
+  .badge-red{background:#fadbd8;color:#922b21}
+  .badge-purple{background:#e8daef;color:#6c3483}
+
+  /* Checklist */
+  .checklist{list-style:none;padding:0;margin:12px 0}
+  .checklist li{display:flex;align-items:flex-start;gap:10px;padding:7px 0;font-size:13.5px;color:#333;border-bottom:1px solid #f5f4f0}
+  .checklist li:last-child{border-bottom:none}
+  .check-box{width:18px;height:18px;border:2px solid #bbb;border-radius:4px;flex-shrink:0;margin-top:2px}
+  .check-label{line-height:1.5}
+  .check-label strong{display:block;font-weight:600;color:#0d2137;font-size:13px}
+  .check-label span{font-size:12.5px;color:#666}
+
+  /* Timeline line */
+  .timeline-line{display:flex;align-items:center;gap:0;margin:30px 0 20px;overflow-x:auto;padding-bottom:8px}
+  .tl-item{display:flex;flex-direction:column;align-items:center;min-width:90px}
+  .tl-dot{width:14px;height:14px;border-radius:50%;background:#0d2137;border:3px solid #fff;box-shadow:0 0 0 2px #0d2137;z-index:1}
+  .tl-line{flex:1;height:2px;background:#d0cec8}
+  .tl-connector{display:flex;align-items:center;flex:1}
+  .tl-year{font-size:11px;font-weight:700;color:#0d2137;margin-top:5px}
+  .tl-label{font-size:10px;color:#888;margin-top:2px;text-align:center}
+
+  /* Subject comparison */
+  .vs-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:0;margin:16px 0;align-items:start}
+  .vs-card{background:#fff;border:1px solid #e2e0da;border-radius:10px;padding:18px}
+  .vs-card.winner{border-color:#27ae60;border-width:2px;background:#eafaf1}
+  .vs-card h4{font-size:14px;font-weight:700;margin-bottom:10px}
+  .vs-card.winner h4{color:#1e8449}
+  .vs-vs{display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#888;padding:0 12px;margin-top:30px}
+
+  /* ACCA paper boxes */
+  .paper-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+  .paper-box{background:#fff;border:1px solid #e2e0da;border-radius:8px;padding:14px}
+  .paper-box h5{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#0d2137;margin-bottom:4px}
+  .paper-box p{font-size:12px;color:#555;line-height:1.5}
+  .paper-box .paper-code{font-size:18px;font-weight:700;color:#2980b9;margin-bottom:6px}
+  .paper-box.exempted{border-color:#27ae60;background:#f0faf4}
+  .paper-box.exempted .paper-code{color:#27ae60}
+  .paper-box.strategic{border-color:#8e44ad;background:#faf5ff}
+  .paper-box.strategic .paper-code{color:#8e44ad}
+
+  /* Stats row */
+  .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}
+  .stat-box{background:#fff;border:1px solid #e2e0da;border-radius:8px;padding:16px;text-align:center}
+  .stat-num{font-size:28px;font-weight:700;color:#0d2137;font-family:'Playfair Display',serif}
+  .stat-unit{font-size:12px;color:#888;margin-top:2px}
+
+  /* Salary range */
+  .salary-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+  .salary-card{background:#fff;border:1px solid #e2e0da;border-radius:8px;padding:16px}
+  .salary-card h5{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#666;margin-bottom:8px}
+  .salary-range{font-size:20px;font-weight:700;color:#0d2137}
+  .salary-role{font-size:12px;color:#888;margin-top:4px}
+
+  /* Resource list */
+  .resource-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+  .resource-item{background:#fff;border:1px solid #e2e0da;border-radius:8px;padding:14px;display:flex;gap:12px;align-items:flex-start}
+  .resource-icon{font-size:22px;flex-shrink:0}
+  .resource-item h5{font-size:13px;font-weight:700;color:#0d2137;margin-bottom:2px}
+  .resource-item p{font-size:12px;color:#666;line-height:1.5}
+  .resource-item .badge{margin-top:4px}
+
+  /* Divider */
+  hr{border:none;border-top:1px solid #e8e6e0;margin:40px 0}
+
+  /* Footer */
+  .footer{background:#0d2137;color:#90b8d6;text-align:center;padding:30px;font-size:13px;margin-top:60px}
+  .footer strong{color:#fff}
+
+
+  html{scroll-behavior:smooth}
+  
+  /* Enhanced responsive navigation */
+  .nav-toggle{
+    display:none;
+    width:100%;
+    background:#fff;
+    border:none;
+    padding:14px 0;
+    font-size:14px;
+    font-weight:700;
+    color:#0d2137;
+    cursor:pointer;
+    text-align:left;
+  }
+
+  .nav-item{
+    position:relative;
+  }
+
+  .nav-item::after{
+    content:'';
+    position:absolute;
+    left:18px;
+    right:18px;
+    bottom:-3px;
+    height:3px;
+    background:#5eb8ff;
+    transform:scaleX(0);
+    transition:transform 0.25s ease;
+  }
+
+  .nav-item:hover::after,
+  .nav-item.active::after{
+    transform:scaleX(1);
+  }
+
+  .hero,
+  .card,
+  .paper-box,
+  .salary-card,
+  .resource-item,
+  .stat-box{
+    transition:transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .card:hover,
+  .paper-box:hover,
+  .salary-card:hover,
+  .resource-item:hover,
+  .stat-box:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.06);
+  }
+
+  .tbl-wrap{
+    -webkit-overflow-scrolling:touch;
+  }
+
+
+  @media(max-width:640px){
+    .hero{padding:36px 20px 32px}
+    .hero h1{font-size:28px}
+    .nav{padding:0 20px}
+    .nav-toggle{display:block}
+    .nav-inner{
+      display:none;
+      flex-direction:column;
+      overflow-x:visible;
+      padding-bottom:10px;
+    }
+    .nav-inner.open{display:flex}
+    .nav-item{
+      width:100%;
+      padding:12px 0;
+      border-bottom:1px solid #f0eeea;
+    }
+    .nav-item::after{display:none}
+    .content{padding:0 20px}
+    .cards{grid-template-columns:1fr}
+    .vs-grid{grid-template-columns:1fr;gap:10px}
+    .vs-vs{display:none}
+    .paper-grid{grid-template-columns:1fr 1fr}
+    .stats-row{grid-template-columns:1fr 1fr}
+    .salary-grid{grid-template-columns:1fr}
+    .resource-list{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-tag">Complete Career Roadmap</div>
+  <h1>Gungun's Path to <span>ACCA</span></h1>
+  <p class="hero-sub">A step-by-step, phase-by-phase guide from Class 11 Commerce to becoming a globally certified accountant — built specifically for you.</p>
+  <div class="hero-meta">
+    <div class="meta-item"><div class="meta-dot"></div>Starting point: Class 10 cleared, switching to Commerce</div>
+    <div class="meta-item"><div class="meta-dot"></div>Goal: ACCA Membership via B.Com</div>
+    <div class="meta-item"><div class="meta-dot"></div>Location: Kanpur, UP</div>
+    <div class="meta-item"><div class="meta-dot"></div>Timeline: ~7 years to ACCA membership</div>
+  </div>
+</div>
+
+<!-- NAV -->
+<div class="nav">
+  <button class="nav-toggle" aria-label="Toggle Navigation">☰ Sections</button>
+  <div class="nav-inner">
+    <a class="nav-item active" href="#overview">Overview</a>
+    <a class="nav-item" href="#phase0">Phase 0</a>
+    <a class="nav-item" href="#class11">Class 11</a>
+    <a class="nav-item" href="#class12">Class 12</a>
+    <a class="nav-item" href="#college">B.Com</a>
+    <a class="nav-item" href="#bcom">B.Com + ACCA</a>
+    <a class="nav-item" href="#strategic">ACCA Papers</a>
+    <a class="nav-item" href="#career">Career</a>
+    <a class="nav-item" href="#resources">Resources</a>
+  </div>
+</div>
+
+<div class="content">
+
+<!-- OVERVIEW STATS -->
+<div class="section" id="overview">
+  <div class="section-label">Big picture</div>
+  <div class="section-title">Your journey at a glance</div>
+  <div class="section-desc">Here's what the entire path looks like — from where you are right now to where you will be as an ACCA member working globally.</div>
+
+  <div class="stats-row">
+    <div class="stat-box">
+      <div class="stat-num">7</div>
+      <div class="stat-unit">years to ACCA membership</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">9</div>
+      <div class="stat-unit">ACCA exam papers (after B.Com exemptions)</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">180+</div>
+      <div class="stat-unit">countries that recognize ACCA</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">₹12L+</div>
+      <div class="stat-unit">avg salary after 3–5 years experience</div>
+    </div>
+  </div>
+
+  <!-- Master timeline -->
+  <div class="tbl-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Phase</th><th>Period</th><th>What happens</th><th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Phase 0</strong></td><td>May – July 2026</td><td>Subject selection, school decision, ACCA awareness</td><td><span class="badge badge-orange">Do NOW</span></td></tr>
+        <tr><td><strong>Phase 1</strong></td><td>July 2026 – Mar 2027</td><td>Class 11 — Foundation year</td><td><span class="badge badge-blue">Upcoming</span></td></tr>
+        <tr><td><strong>Phase 2</strong></td><td>Apr 2027 – Mar 2028</td><td>Class 12 — Performance year + entrance prep</td><td><span class="badge badge-blue">Upcoming</span></td></tr>
+        <tr><td><strong>Phase 3</strong></td><td>May – Aug 2028</td><td>B.Com admission + ACCA registration</td><td><span class="badge badge-blue">Upcoming</span></td></tr>
+        <tr><td><strong>Phase 4</strong></td><td>Aug 2028 – May 2029</td><td>B.Com Year 1 + ACCA Applied Knowledge papers</td><td><span class="badge badge-blue">Upcoming</span></td></tr>
+        <tr><td><strong>Phase 5</strong></td><td>Jun 2029 – May 2030</td><td>B.Com Year 2 + ACCA Applied Skills (LW, TX)</td><td><span class="badge badge-blue">Upcoming</span></td></tr>
+        <tr><td><strong>Phase 6</strong></td><td>Jun 2030 – May 2031</td><td>B.Com Year 3 + ACCA Applied Skills (PM, FR, AA, FM)</td><td><span class="badge badge-blue">Upcoming</span></td></tr>
+        <tr><td><strong>Phase 7</strong></td><td>2031 – 2033</td><td>ACCA Strategic Professional (SBL, SBR, Options)</td><td><span class="badge badge-blue">Upcoming</span></td></tr>
+        <tr><td><strong>Phase 8</strong></td><td>2033 onwards</td><td>ACCA Membership + Career launch</td><td><span class="badge badge-green">Goal ✓</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<hr>
+
+<!-- PHASE 0 -->
+<div class="section" id="phase0">
+  <div class="phase-banner p0">
+    <div>
+      <div class="phase-num">Phase 0</div>
+      <div class="phase-title">⚡ Immediate Decisions — Do This Right Now</div>
+      <div class="phase-timeline">May 2026 – July 2026</div>
+    </div>
+  </div>
+
+  <div class="alert alert-critical">
+    <h4>🔴 Most urgent decision: Subject selection</h4>
+    <p>Before school admission in June–July 2026, you must decide your 11th-class subjects. This is your single most important immediate decision. Read this section carefully and decide wisely — the wrong subject can create unnecessary obstacles later.</p>
+  </div>
+
+  <div class="section-label">The big question from your notes</div>
+  <div class="section-title" style="font-size:21px">Computer Science or Economics?</div>
+  <div class="section-desc">You asked this in your notes. Here is the complete, honest answer.</div>
+
+  <div class="vs-grid">
+    <div class="vs-card winner">
+      <div class="badge badge-green" style="margin-bottom:10px">✓ Recommended for you</div>
+      <h4>📊 Economics</h4>
+      <ul style="padding-left:16px;font-size:13px;color:#333">
+        <li style="margin-bottom:6px"><strong>Directly tested in ACCA:</strong> The BT (Business &amp; Technology) and FM (Financial Management) papers both test economics concepts you learn in Class 11–12</li>
+        <li style="margin-bottom:6px"><strong>Core to B.Com:</strong> Every B.Com program has economics as a major subject — learning it now gives you a massive head start</li>
+        <li style="margin-bottom:6px"><strong>Macro &amp; micro required:</strong> ACCA needs you to understand demand-supply, inflation, interest rates, exchange rates, fiscal policy — all covered in Class 12 Economics</li>
+        <li style="margin-bottom:6px"><strong>Better for internships:</strong> Any finance/accounting internship will expect you to understand basic economics</li>
+        <li style="margin-bottom:6px"><strong>Career intelligence:</strong> Reading financial news, understanding RBI policy, budget analysis — all need economics background</li>
+      </ul>
+    </div>
+    <div class="vs-vs">VS</div>
+    <div class="vs-card">
+      <h4>💻 Computer Science</h4>
+      <ul style="padding-left:16px;font-size:13px;color:#333">
+        <li style="margin-bottom:6px"><strong>Not tested in ACCA at all:</strong> Not a single ACCA paper requires formal CS knowledge</li>
+        <li style="margin-bottom:6px"><strong>Can be learned online:</strong> Excel, Tally, basic coding — all easily self-taught through YouTube and free courses in your spare time</li>
+        <li style="margin-bottom:6px"><strong>Not required for B.Com admission:</strong> No top B.Com college requires CS as a 12th subject</li>
+        <li style="margin-bottom:6px"><strong>Lower ACCA relevance:</strong> While digital skills matter in accounting, formal CS class is not needed for that</li>
+        <li style="margin-bottom:6px"><strong>Better for engineering/IT path:</strong> CS makes sense if you were going into tech, not accounting</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="alert alert-success">
+    <h4>✅ Final answer: Choose Economics</h4>
+    <p><strong>Important bonus note:</strong> If your school also offers <strong>Mathematics</strong> as an optional subject (instead of or alongside Economics), seriously consider taking <strong>Maths</strong>. Many top B.Com colleges (especially Delhi University — SRCC, Hindu College) ask for Maths in 12th. ACCA's FM paper also uses financial mathematics. If you can take both Economics + Maths, that is the ideal combination. If forced to choose only one subject between CS and Economics, Economics wins every single time for the ACCA path.</p>
+  </div>
+
+  <div style="margin-top:24px">
+    <div class="section-label">Your recommended subject combination for Class 11–12</div>
+  </div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Subject</th><th>Type</th><th>ACCA Connection</th><th>Priority</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Accountancy</strong></td><td>Compulsory (Commerce)</td><td>Directly maps to FA, FR, AA papers</td><td><span class="badge badge-red">Highest</span></td></tr>
+        <tr><td><strong>Business Studies</strong></td><td>Compulsory (Commerce)</td><td>Maps to BT paper</td><td><span class="badge badge-red">Highest</span></td></tr>
+        <tr><td><strong>Economics</strong></td><td>Compulsory or Optional</td><td>Maps to BT and FM papers</td><td><span class="badge badge-red">Highest</span></td></tr>
+        <tr><td><strong>English</strong></td><td>Compulsory</td><td>All 13 ACCA papers are in English only</td><td><span class="badge badge-red">Highest</span></td></tr>
+        <tr><td><strong>Mathematics</strong> (if available)</td><td>Optional</td><td>FM paper, DU admission requirement</td><td><span class="badge badge-orange">Very High</span></td></tr>
+        <tr><td><strong>Hindi</strong></td><td>Compulsory (UP Board)</td><td>Not connected to ACCA</td><td><span class="badge badge-blue">Required</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="margin-top:26px">
+    <div class="section-label">Checklist — Do these before July 2026</div>
+    <ul class="checklist">
+      <li><div class="check-box"></div><div class="check-label"><strong>Visit your school and confirm Commerce stream subject options</strong><span>Ask specifically: Is Economics available? Is Mathematics available?</span></div></li>
+      <li><div class="check-box"></div><div class="check-label"><strong>Confirm English medium is offered in Commerce</strong><span>ACCA exams are 100% in English — this is non-negotiable</span></div></li>
+      <li><div class="check-box"></div><div class="check-label"><strong>Visit accaglobal.com and read the ACCA student guide (free)</strong><span>Download it and read it over one weekend to understand the full picture</span></div></li>
+      <li><div class="check-box"></div><div class="check-label"><strong>Buy a notebook exclusively for Commerce subject notes</strong><span>Separate notebooks for Accountancy, Economics, and Business Studies</span></div></li>
+      <li><div class="check-box"></div><div class="check-label"><strong>Create a free account on OpenTuition.com</strong><span>The world's best free ACCA resource — bookmark it now</span></div></li>
+      <li><div class="check-box"></div><div class="check-label"><strong>Download the Economic Times app and read it for 10 minutes daily</strong><span>Start understanding financial news — this habit will pay dividends for years</span></div></li>
+      <li><div class="check-box"></div><div class="check-label"><strong>Watch 5 ACCA student story videos on YouTube</strong><span>Search "ACCA student journey India" — see what others who succeeded did</span></div></li>
+      <li><div class="check-box"></div><div class="check-label"><strong>Tell your parents clearly: This is the plan — ACCA via B.Com</strong><span>Get them on board early. Costs involved: ₹7,500–9,000/year for ACCA subscription, ~₹8,000–15,000 per exam</span></div></li>
+    </ul>
+  </div>
+</div>
+
+<hr>
+
+<!-- PHASE 1: CLASS 11 -->
+<div class="section" id="class11">
+  <div class="phase-banner p1">
+    <div>
+      <div class="phase-num">Phase 1</div>
+      <div class="phase-title">📚 Class 11 — Building Your Foundation</div>
+      <div class="phase-timeline">July 2026 – March 2027 (9 months)</div>
+    </div>
+  </div>
+
+  <div class="section-desc">Class 11 is not just another school year. Every concept you learn here will reappear in your ACCA papers — sometimes 6–7 years from now. Study with awareness of this. Think of yourself not as a student studying for boards, but as a future accountant building professional knowledge.</div>
+
+  <div class="alert alert-info">
+    <h4>📌 Class 11 motto: Understand deeply, don't just memorize</h4>
+    <p>ACCA exams test application, not rote learning. If you understand WHY journal entries work the way they do in Class 11, you will find ACCA Financial Accounting (FA) easy. Build the habit of asking "why does this rule exist?" rather than "how do I memorize this rule?"</p>
+  </div>
+
+  <div class="section-label" style="margin-top:20px">Subject-by-subject strategy</div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon">📒</div>
+      <h4>Accountancy — Your Most Important Subject</h4>
+      <p>This is your career foundation. Give it the most time and attention. Every single ACCA paper at some level connects back to accounting fundamentals.</p>
+      <ul>
+        <li><strong>Class 11 topics:</strong> Introduction to accounting, journal entries, ledger, trial balance, subsidiary books, bank reconciliation, depreciation, provisions, basic partnership</li>
+        <li><strong>Target score:</strong> 90%+</li>
+        <li><strong>Study method:</strong> NCERT is sufficient for basics. Practice 10 journal entries every single day. Solve past papers. Never leave a topic without practicing it.</li>
+        <li><strong>ACCA connection:</strong> The Journal Entry you learn today becomes the building block of the ACCA FA (Financial Accounting) paper. Debit-credit logic you master now = marks guaranteed in ACCA later.</li>
+        <li><strong>Extra resource:</strong> YouTube channel "Rachna Ranade" for visual explanations of accounting concepts</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">📈</div>
+      <h4>Business Studies — Understanding How Business Works</h4>
+      <p>This subject gives you the organizational and management lens that ACCA's BT paper requires.</p>
+      <ul>
+        <li><strong>Class 11 topics:</strong> Nature and purpose of business, forms of business organization, private/public sector, sole proprietorship, partnership, companies, business services, trade</li>
+        <li><strong>Target score:</strong> 85%+</li>
+        <li><strong>Study method:</strong> NCERT + mind maps. This is a theoretical subject — create one-page summaries for each chapter. Connect topics to real Indian companies (Tata, Reliance, HDFC).</li>
+        <li><strong>ACCA connection:</strong> BT (Business and Technology) paper covers business organization, ethics, internal controls, and technology — all first encountered in Business Studies Class 11–12</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🌐</div>
+      <h4>Economics — Understanding the World of Money</h4>
+      <p>Economics connects your accounting knowledge to the larger world — why interest rates change, why inflation happens, how governments manage economies. This is essential for ACCA.</p>
+      <ul>
+        <li><strong>Class 11 topics:</strong> Introduction to economics, consumer's equilibrium, demand, supply, market equilibrium, price elasticity, production, cost analysis</li>
+        <li><strong>Target score:</strong> 85%+</li>
+        <li><strong>Study method:</strong> Draw demand-supply diagrams until they become instinct. Understand the logic — don't memorize curves, understand what they mean economically.</li>
+        <li><strong>ACCA connection:</strong> ACCA BT paper has an entire economics section. FM paper uses concepts like NPV, cost of capital — all rooted in economic logic you build now.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🗣️</div>
+      <h4>English — Your Most Underrated Subject for ACCA</h4>
+      <p>Most students treat English casually in Commerce. Big mistake. All 13 ACCA papers are answered in English. Your ability to write clear, structured answers will directly determine your marks.</p>
+      <ul>
+        <li><strong>Class 11 focus:</strong> Report writing, letter writing, comprehension, grammar, formal writing style</li>
+        <li><strong>Target score:</strong> 85%+</li>
+        <li><strong>ACCA connection:</strong> Strategic Professional papers (SBL, SBR) require 4-hour essays in English. Weak English = weak ACCA marks. Strong English = confident ACCA performance.</li>
+        <li><strong>Extra practice:</strong> Write one paragraph daily about a financial news story. This builds both English and finance knowledge simultaneously.</li>
+      </ul>
+    </div>
+
+    <div class="card card-full">
+      <div class="card-icon">🔢</div>
+      <h4>Mathematics (if you've chosen it as optional) — Do Not Ignore This</h4>
+      <p>If you've taken Maths, treat it seriously. Many students in Commerce neglect Maths, but for ACCA, especially the FM (Financial Management) paper, maths skills are essential. Topics like compound interest, percentages, ratios, time-value of money, and basic algebra appear throughout ACCA. Even if your syllabus is "Applied Maths" or "Business Maths", master it thoroughly. Target 80%+.</p>
+    </div>
+  </div>
+
+  <div class="section-label" style="margin-top:20px">Skills to build outside the classroom in Class 11</div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Skill</th><th>How to build it</th><th>Time needed</th><th>Why it matters for ACCA</th></tr></thead>
+      <tbody>
+        <tr><td><strong>MS Excel basics</strong></td><td>Watch "Excel for Beginners" on YouTube. Practice SUM, AVERAGE, IF, VLOOKUP, basic charts</td><td>2 hours/week</td><td>ACCA computations in exams; essential for all finance jobs</td></tr>
+        <tr><td><strong>Typing speed</strong></td><td>Practice on typingclub.com daily for 15 minutes. Target: 40+ words per minute</td><td>15 min/day</td><td>ACCA exams are Computer Based — slow typing costs marks</td></tr>
+        <tr><td><strong>Financial news reading</strong></td><td>Economic Times app, 10 minutes every morning. Read at least one finance article daily</td><td>10 min/day</td><td>Builds business vocabulary, case study thinking, real-world context for ACCA</td></tr>
+        <tr><td><strong>Basic Tally (accounting software)</strong></td><td>Free Tally Prime Educational version available. YouTube tutorials to learn basics</td><td>1 hour/week</td><td>Most accounting jobs and internships require Tally knowledge</td></tr>
+        <tr><td><strong>English writing practice</strong></td><td>Write 1 paragraph per day — summarizing a news story, or explaining an accounting concept you learned</td><td>10 min/day</td><td>ACCA answer writing requires structured, professional English</td></tr>
+        <tr><td><strong>ACCA paper overview study</strong></td><td>Download free ACCA BT study notes from OpenTuition and read 5–10 pages per week casually</td><td>30 min/week</td><td>Familiarizes you with ACCA terminology; makes transition smoother later</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-label" style="margin-top:20px">Month-by-month targets for Class 11</div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Month</th><th>Accountancy target</th><th>Economics target</th><th>Extra activity</th></tr></thead>
+      <tbody>
+        <tr><td>July–Aug 2026</td><td>Master basic accounting concepts, journal entries, ledger perfectly</td><td>Understand micro basics: demand, supply, consumer equilibrium</td><td>Set up Excel on phone/computer. Start typing practice.</td></tr>
+        <tr><td>Sep–Oct 2026</td><td>Trial balance, subsidiary books, bank reconciliation</td><td>Elasticity, production theory, cost analysis</td><td>Read 10 ET articles. Create your first Excel sheet.</td></tr>
+        <tr><td>Nov 2026</td><td>Depreciation, provisions, bad debts</td><td>Revenue, profit concepts in economics</td><td>Half-yearly exam revision. Score check.</td></tr>
+        <tr><td>Dec 2026 – Jan 2027</td><td>Partnership basics, financial statements</td><td>Market equilibrium, price determination</td><td>Watch ACCA intro videos on YouTube. Learn basic Tally.</td></tr>
+        <tr><td>Feb–Mar 2027</td><td>Full revision, all Class 11 chapters</td><td>Full revision</td><td>Final exam. Aim 90%+ in Accountancy, 85%+ in others.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<hr>
+
+<!-- PHASE 2: CLASS 12 -->
+<div class="section" id="class12">
+  <div class="phase-banner p2">
+    <div>
+      <div class="phase-num">Phase 2</div>
+      <div class="phase-title">🎯 Class 12 — Performance Year + College Prep</div>
+      <div class="phase-timeline">April 2027 – March 2028 (12 months)</div>
+    </div>
+  </div>
+
+  <div class="section-desc">Class 12 carries double importance: your board exam marks determine college admission, AND you begin serious ACCA preparation alongside boards. This is where you go from "student" to "professional aspirant." The workload increases, but so do the rewards.</div>
+
+  <div class="alert alert-critical">
+    <h4>🔴 Board exam marks matter enormously here</h4>
+    <p>Delhi University top colleges (SRCC, Hindu) have cutoffs of <strong>95%+ overall</strong> for Commerce students. Even Lucknow University and Allahabad University require strong marks. Boards in Class 12 are not something to take lightly. Plan your studies so that ACCA awareness never comes at the cost of board marks.</p>
+  </div>
+
+  <div class="section-label" style="margin-top:20px">Advanced subjects in Class 12 and their ACCA mapping</div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Class 12 Topic</th><th>ACCA Paper it connects to</th><th>How closely connected</th></tr></thead>
+      <tbody>
+        <tr><td>Partnership accounts, company accounts</td><td>FA (Financial Accounting)</td><td><span class="badge badge-red">Very High</span></td></tr>
+        <tr><td>Cash Flow Statement</td><td>FA, FR (Financial Reporting)</td><td><span class="badge badge-red">Very High</span></td></tr>
+        <tr><td>Ratio Analysis</td><td>FR, FM (Financial Management)</td><td><span class="badge badge-red">Very High</span></td></tr>
+        <tr><td>Business Finance (capital, sources of funds)</td><td>FM (Financial Management)</td><td><span class="badge badge-orange">High</span></td></tr>
+        <tr><td>Marketing Management</td><td>BT (Business and Technology)</td><td><span class="badge badge-blue">Medium</span></td></tr>
+        <tr><td>Consumer Protection / Business Ethics</td><td>BT, SBL (Strategic Business Leader)</td><td><span class="badge badge-blue">Medium</span></td></tr>
+        <tr><td>Indian Economic Development (Macro)</td><td>BT, FM</td><td><span class="badge badge-blue">Medium</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-label" style="margin-top:24px">College entrance preparation — run alongside Class 12</div>
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon">🏛️</div>
+      <h4>CUET (Common University Entrance Test)</h4>
+      <p>This is the main gateway to Central University B.Com programs (Delhi University, Banaras Hindu University, Allahabad Central University, and many others).</p>
+      <ul>
+        <li><strong>Exam date:</strong> May 2028</li>
+        <li><strong>Sections:</strong> Language (English), Domain subjects (Accountancy, Business Studies, Economics, Maths), General Test</li>
+        <li><strong>Preparation start:</strong> Begin October 2027 alongside Class 12 revision</li>
+        <li><strong>Good news:</strong> CUET syllabus is almost identical to Class 12 NCERT — your board prep IS your CUET prep!</li>
+        <li><strong>Target score:</strong> 90%+ in all sections for DU top colleges</li>
+        <li><strong>Resources:</strong> CUET NTA official website, previous year papers (available free on NTA.ac.in)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🎓</div>
+      <h4>College Research and Shortlisting</h4>
+      <p>Start researching colleges from Class 12 itself. Don't wait until results — know your target colleges in advance.</p>
+      <ul>
+        <li><strong>Check ACCA tie-ups:</strong> Some colleges have official ACCA learning partner agreements — they have ACCA awareness and sometimes structured programs</li>
+        <li><strong>Check placement records:</strong> Which companies recruit from this college?</li>
+        <li><strong>Check English medium availability:</strong> Some state university B.Com programs are Hindi medium — avoid those for ACCA path</li>
+        <li><strong>Check faculty quality:</strong> Talk to seniors, read reviews on Shiksha.com and Careers360</li>
+        <li><strong>Check proximity to ACCA coaching:</strong> Is there an ACCA tuition center nearby?</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-label" style="margin-top:24px">ACCA student registration in Class 12 (optional but recommended)</div>
+  <div class="alert alert-success">
+    <h4>✅ Register as an ACCA student during Class 12</h4>
+    <p>You can officially register as an ACCA student during Class 12 (minimum age 16, minimum education: 10+2 or equivalent). You do NOT need to start giving exams immediately. Registration simply gives you access to ACCA's student resources, past papers, and community. Cost: approximately ₹7,500–9,000/year for student subscription. Benefits of registering early: you get access to the ACCA student portal, can download study materials, and join the official ACCA student community online. Register at: <strong>accaglobal.com → Students → Register</strong></p>
+  </div>
+
+  <div class="section-label" style="margin-top:20px">Class 12 board exam strategy — score maximizer</div>
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon">✏️</div>
+      <h4>Accountancy — Target 95%+</h4>
+      <ul>
+        <li>Practice complete financial statements (Trading, P&amp;L, Balance Sheet) from scratch every week</li>
+        <li>Company accounts (share capital, debentures) — most students lose marks here; master it</li>
+        <li>Cash Flow Statement — direct and indirect method both must be perfect</li>
+        <li>Ratio Analysis — calculate AND interpret ratios (not just formulas)</li>
+        <li>Partner admission, retirement, death — fully solve all types</li>
+        <li>Solve minimum 5 full question papers from previous years (UP Board)</li>
+        <li><strong>Resource:</strong> NCERT + DK Goel textbook + previous 10-year UP Board papers</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-icon">💼</div>
+      <h4>Business Studies — Target 90%+</h4>
+      <ul>
+        <li>Management and its functions (planning, organizing, staffing, directing, controlling)</li>
+        <li>Financial management — capital structure, leverage, dividend decision</li>
+        <li>Marketing management — 4Ps, pricing strategies, distribution channels</li>
+        <li>Consumer protection — Consumer Protection Act 2019</li>
+        <li>Entrepreneurship development (if in syllabus)</li>
+        <li>Answer writing: Use headings, sub-points, real examples from Indian business</li>
+        <li><strong>Resource:</strong> NCERT + CBSE sample papers (similar pattern to UP Board)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <h4>Economics — Target 88%+</h4>
+      <ul>
+        <li>Macroeconomics: National income, money, banking, government budget, balance of payments</li>
+        <li>Indian Economic Development: History, agriculture, industry, liberalization, poverty, human capital</li>
+        <li>Draw all diagrams neatly with proper labels</li>
+        <li>Learn key data: India's GDP, inflation rate, etc. (ACCA exams sometimes include India-specific questions)</li>
+        <li>Connect theory to current events in your answers</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-icon">📝</div>
+      <h4>English — Target 85%+</h4>
+      <ul>
+        <li>Reading comprehension: Practice speed reading + extracting key information</li>
+        <li>Report writing: This is the most important writing skill for ACCA — practice formal report format</li>
+        <li>Letter writing: Business letter format (will be needed in professional life)</li>
+        <li>Grammar: Tenses, voice, narration — get these perfect for ACCA exam writing</li>
+        <li>Read English novels/short stories for fluency (Recommended: Simple business books like "Rich Dad Poor Dad")</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-label" style="margin-top:20px">Skills to build in Class 12</div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Skill</th><th>Target by March 2028</th><th>Resource</th></tr></thead>
+      <tbody>
+        <tr><td>MS Excel</td><td>Intermediate: Pivot tables, VLOOKUP, basic financial modeling</td><td>YouTube: "Excel for Accountants" free playlists</td></tr>
+        <tr><td>Typing speed</td><td>50+ words per minute</td><td>typingclub.com daily practice</td></tr>
+        <tr><td>Tally Prime</td><td>Basic data entry, ledger creation, basic reports</td><td>Tally Education free YouTube videos</td></tr>
+        <tr><td>English reading</td><td>Comfortable reading 2–3 ET articles without dictionary</td><td>Economic Times app, daily habit</td></tr>
+        <tr><td>ACCA knowledge</td><td>Know all 13 ACCA papers by name, syllabus overview of Applied Knowledge papers</td><td>OpenTuition.com free notes</td></tr>
+        <tr><td>Professional communication</td><td>Write clear, concise professional emails and reports</td><td>Practice in English class, read business writing guides</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<hr>
+
+<!-- PHASE 3: COLLEGE ADMISSION -->
+<div class="section" id="college">
+  <div class="phase-banner p3">
+    <div>
+      <div class="phase-num">Phase 3</div>
+      <div class="phase-title">🏛️ B.Com Admission + ACCA Official Registration</div>
+      <div class="phase-timeline">April – August 2028 (4 months)</div>
+    </div>
+  </div>
+
+  <div class="section-desc">Board results come in April–May 2028. This is when you choose your college and officially begin your ACCA journey with full commitment. These 4 months are critical — the decisions made here shape the next 3–4 years.</div>
+
+  <div class="section-label">College options — ranked by ACCA career advantage</div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>College</th><th>Location</th><th>ACCA advantage</th><th>Admission</th><th>Difficulty</th></tr></thead>
+      <tbody>
+        <tr><td><strong>SRCC, Hindu College, Hansraj (DU)</strong></td><td>Delhi</td><td>Best: Big 4 recruiters, ACCA awareness, alumni network, proximity to Delhi job market</td><td>CUET — very high cutoff (95%+)</td><td><span class="badge badge-red">Very High</span></td></tr>
+        <tr><td><strong>Ramjas, Kirori Mal, Miranda House (DU)</strong></td><td>Delhi</td><td>Very good: Same DU advantages at slightly lower cutoffs</td><td>CUET — 90–94%</td><td><span class="badge badge-orange">High</span></td></tr>
+        <tr><td><strong>BHU (Banaras Hindu University)</strong></td><td>Varanasi (close to Kanpur)</td><td>Good: Central university, strong academics, affordable</td><td>CUET — 85–90%</td><td><span class="badge badge-orange">High</span></td></tr>
+        <tr><td><strong>University of Lucknow</strong></td><td>Lucknow (near Kanpur)</td><td>Decent: State university, affordable, familiar location, reasonable B.Com program</td><td>UP state merit + entrance</td><td><span class="badge badge-blue">Medium</span></td></tr>
+        <tr><td><strong>University of Allahabad</strong></td><td>Prayagraj</td><td>Decent: Historic university, established Commerce department</td><td>State entrance exam</td><td><span class="badge badge-blue">Medium</span></td></tr>
+        <tr><td><strong>Symbiosis Pune / Narsee Monjee Mumbai</strong></td><td>Pune / Mumbai</td><td>Good for private: Modern environment, English medium, industry exposure</td><td>Entrance exam + merit</td><td><span class="badge badge-orange">High</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="alert alert-info">
+    <h4>💡 Strategic advice on college selection</h4>
+    <p>The honest truth: for ACCA, the degree college matters less than it would for, say, CA or MBA. ACCA is a self-qualifying exam — employers care about your ACCA results, not so much your B.Com college. However, a better college gives you: better infrastructure, better internship opportunities, better peer network, and a more English-language environment. If you can get into DU — go. If not, Lucknow University with serious self-study is perfectly fine for ACCA success. Do NOT stress about this decision beyond your genuine merit. Many successful ACCA members in India came from state universities.</p>
+  </div>
+
+  <div class="section-label" style="margin-top:24px">ACCA registration — step by step</div>
+  <div class="cards">
+    <div class="card card-full">
+      <h4>How to register for ACCA (do this in July–August 2028)</h4>
+      <ol style="padding-left:18px;margin-top:8px">
+        <li style="margin-bottom:8px;font-size:13.5px"><strong>Go to accaglobal.com</strong> → click "Students" → "Register now"</li>
+        <li style="margin-bottom:8px;font-size:13.5px"><strong>Fill the application form</strong> — name, date of birth, address, educational qualifications (upload 10th and 12th certificates)</li>
+        <li style="margin-bottom:8px;font-size:13.5px"><strong>Pay the registration fee</strong> — approximately ₹7,500–9,000 per year for student subscription. Payment via credit/debit card or net banking.</li>
+        <li style="margin-bottom:8px;font-size:13.5px"><strong>You will receive your ACCA student number</strong> — keep this safe. This is your identity with ACCA forever.</li>
+        <li style="margin-bottom:8px;font-size:13.5px"><strong>Access ACCA student portal</strong> — download past papers, access study resources, register for exams</li>
+        <li style="margin-bottom:8px;font-size:13.5px"><strong>Plan your exam schedule</strong> — Applied Knowledge papers are available year-round (CBE). Applied Skills and Strategic Professional have 4 sittings: March, June, September, December.</li>
+        <li style="margin-bottom:8px;font-size:13.5px"><strong>Understand your B.Com exemptions</strong> — after completing B.Com, apply for exemptions from BT, MA, FA. ACCA will verify and grant exemptions.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="section-label" style="margin-top:20px">ACCA complete paper structure — know your enemy</div>
+  <div style="margin-bottom:10px;font-size:13px;color:#666">The Applied Knowledge papers (green boxes) will be exempted once you complete B.Com. You must clear all remaining 9 papers.</div>
+
+  <div style="margin-bottom:8px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#27ae60">Applied Knowledge Level — Exempted with B.Com ✓</div>
+  <div class="paper-grid">
+    <div class="paper-box exempted">
+      <div class="paper-code">BT</div>
+      <h5>Business and Technology</h5>
+      <p>Business environment, organizational structure, technology in business, ethics</p>
+    </div>
+    <div class="paper-box exempted">
+      <div class="paper-code">MA</div>
+      <h5>Management Accounting</h5>
+      <p>Cost accounting, budgeting, variance analysis, decision making</p>
+    </div>
+    <div class="paper-box exempted">
+      <div class="paper-code">FA</div>
+      <h5>Financial Accounting</h5>
+      <p>Double entry, trial balance, financial statements, introduction to IFRS</p>
+    </div>
+  </div>
+
+  <div style="margin:16px 0 8px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#2980b9">Applied Skills Level — 6 Papers You Must Pass</div>
+  <div class="paper-grid">
+    <div class="paper-box">
+      <div class="paper-code">LW</div>
+      <h5>Corporate and Business Law</h5>
+      <p>Contract law, company law, employment law, insolvency law — English legal system based</p>
+    </div>
+    <div class="paper-box">
+      <div class="paper-code">PM</div>
+      <h5>Performance Management</h5>
+      <p>Advanced management accounting, performance measurement frameworks, decision making under uncertainty</p>
+    </div>
+    <div class="paper-box">
+      <div class="paper-code">TX</div>
+      <h5>Taxation</h5>
+      <p>Personal and corporate taxation — UK tax system (or selected variants). Concept-level similar to Indian tax.</p>
+    </div>
+    <div class="paper-box">
+      <div class="paper-code">FR</div>
+      <h5>Financial Reporting</h5>
+      <p>International Financial Reporting Standards (IFRS), group accounts, complex financial statements</p>
+    </div>
+    <div class="paper-box">
+      <div class="paper-code">AA</div>
+      <h5>Audit and Assurance</h5>
+      <p>Audit planning, evidence gathering, internal controls, audit reports, professional ethics</p>
+    </div>
+    <div class="paper-box">
+      <div class="paper-code">FM</div>
+      <h5>Financial Management</h5>
+      <p>Investment appraisal (NPV, IRR), working capital, cost of capital, capital structure, risk management</p>
+    </div>
+  </div>
+
+  <div style="margin:16px 0 8px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#8e44ad">Strategic Professional Level — 4 Papers (2 Essentials + 2 Options)</div>
+  <div class="paper-grid">
+    <div class="paper-box strategic">
+      <div class="paper-code">SBL</div>
+      <h5>Strategic Business Leader</h5>
+      <p>4-hour integrated case study. Strategy, leadership, governance, risk, digital transformation, ethics. Essentials — mandatory.</p>
+    </div>
+    <div class="paper-box strategic">
+      <div class="paper-code">SBR</div>
+      <h5>Strategic Business Reporting</h5>
+      <p>3.5-hour exam. Advanced IFRS, group reporting, complex instruments. Essentials — mandatory.</p>
+    </div>
+    <div class="paper-box strategic">
+      <div class="paper-code">AFM</div>
+      <h5>Advanced Financial Management</h5>
+      <p>Options paper. Complex corporate finance, derivatives, mergers. Recommended if you like FM.</p>
+    </div>
+    <div class="paper-box strategic">
+      <div class="paper-code">ATX</div>
+      <h5>Advanced Taxation</h5>
+      <p>Options paper. Complex tax planning, advanced tax issues. Good for tax specialist career path.</p>
+    </div>
+  </div>
+
+  <div class="alert alert-success" style="margin-top:16px">
+    <h4>✅ Recommended options combination: AFM + ATX</h4>
+    <p>This combination gives you the strongest employability in India and internationally. Financial management + taxation expertise is what Big 4 firms, MNCs, and banks want most. You can decide closer to the time, but keep this in mind from the start.</p>
+  </div>
+</div>
+
+<hr>
+
+<!-- PHASE 4-6: B.COM + ACCA -->
+<div class="section" id="bcom">
+  <div class="phase-banner p4">
+    <div>
+      <div class="phase-num">Phases 4, 5 & 6</div>
+      <div class="phase-title">🎓 B.Com Years 1–3 + ACCA Applied Knowledge &amp; Skills</div>
+      <div class="phase-timeline">August 2028 – May 2031 (3 years)</div>
+    </div>
+  </div>
+
+  <div class="section-desc">These three years are your most intensive period. You are simultaneously doing a full-time B.Com degree AND preparing for ACCA professional exams. It is demanding but completely doable — thousands of Indian students do this every year. The key is a structured schedule and consistent effort.</div>
+
+  <div class="section-label">How B.Com subjects map to ACCA papers</div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>B.Com Subject</th><th>Year</th><th>ACCA Paper (prepares you for)</th></tr></thead>
+      <tbody>
+        <tr><td>Financial Accounting</td><td>Year 1</td><td>FA (already exempted, but deepens knowledge for FR)</td></tr>
+        <tr><td>Business Economics</td><td>Year 1</td><td>BT (Business and Technology)</td></tr>
+        <tr><td>Business Law</td><td>Year 1–2</td><td>LW (Corporate and Business Law) — very direct connection</td></tr>
+        <tr><td>Cost Accounting</td><td>Year 2</td><td>PM (Performance Management)</td></tr>
+        <tr><td>Income Tax</td><td>Year 2</td><td>TX (Taxation) — concepts similar, jurisdiction different</td></tr>
+        <tr><td>Auditing and Assurance</td><td>Year 2–3</td><td>AA (Audit and Assurance) — very direct connection</td></tr>
+        <tr><td>Corporate Accounting</td><td>Year 2–3</td><td>FR (Financial Reporting) — IFRS vs Indian GAAP difference to learn</td></tr>
+        <tr><td>Financial Management</td><td>Year 3</td><td>FM (Financial Management) — very direct connection</td></tr>
+        <tr><td>Strategic Management</td><td>Year 3</td><td>SBL (Strategic Business Leader)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-label" style="margin-top:24px">Year-by-year ACCA exam strategy during B.Com</div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon">1️⃣</div>
+      <h4>B.Com Year 1 (2028–2029) — Get ACCA exam-ready</h4>
+      <ul>
+        <li><strong>Focus on B.Com:</strong> Settle into college, build strong foundation in B.Com Year 1 subjects — 70% of your time</li>
+        <li><strong>ACCA Applied Knowledge — start preparing:</strong> Use BT, MA, FA notes from OpenTuition (even though you'll be exempted, studying them makes Applied Skills easier)</li>
+        <li><strong>Target exam:</strong> Attempt BT (Business and Technology) in March or June 2029 — it's the easiest paper, great confidence builder</li>
+        <li><strong>Practical experience:</strong> Start any accounting/finance internship in Year 1 summer (May–July 2029) — even unpaid. Document this for PER (Practical Experience Requirement)</li>
+        <li><strong>Build study group:</strong> Find 2–3 ACCA-serious batchmates in college</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">2️⃣</div>
+      <h4>B.Com Year 2 (2029–2030) — Applied Skills begin</h4>
+      <ul>
+        <li><strong>This year's B.Com subjects (Business Law, Income Tax, Cost Accounting, Auditing) directly help ACCA Applied Skills</strong></li>
+        <li><strong>Target ACCA papers this year:</strong> LW (Law) and TX (Taxation) — your B.Com learning directly supports these</li>
+        <li><strong>LW exam tip:</strong> ACCA LW is based on English law (not Indian law) — you will need to learn the differences. But business law principles are universal.</li>
+        <li><strong>TX exam tip:</strong> ACCA TX is UK taxation. Study alongside, not instead of, Indian IT in B.Com. Tax logic transfers even if jurisdiction differs.</li>
+        <li><strong>Internship:</strong> Year 2 summer — aim for a paid accounting internship. This counts towards your 3-year PER requirement.</li>
+        <li><strong>Excel skills:</strong> By end of Year 2, you must be proficient in financial modeling in Excel</li>
+      </ul>
+    </div>
+
+    <div class="card card-full">
+      <div class="card-icon">3️⃣</div>
+      <h4>B.Com Year 3 (2030–2031) — Complete Applied Skills level</h4>
+      <ul>
+        <li><strong>Most demanding year:</strong> Final year B.Com + attempting 3–4 ACCA Applied Skills papers</li>
+        <li><strong>Target ACCA papers this year:</strong> PM, FR, AA, FM — the remaining four Applied Skills papers</li>
+        <li><strong>Do not attempt all 4 in one sitting:</strong> Spread them — attempt 2 per sitting. Suggested: PM + FR in September 2030, AA + FM in December 2030 or March 2031</li>
+        <li><strong>FR (Financial Reporting) is the hardest:</strong> IFRS is complex. Give it dedicated study time — minimum 120 hours of preparation.</li>
+        <li><strong>FM (Financial Management) is very quantitative:</strong> Heavy use of NPV, IRR, WACC calculations. Practice under timed conditions.</li>
+        <li><strong>Final B.Com project/dissertation:</strong> If your college has a final year project, choose a finance/accounting topic — double benefit for ACCA knowledge</li>
+        <li><strong>B.Com exemption application:</strong> Once results arrive (May–June 2031), immediately apply to ACCA for your B.Com exemptions. ACCA will confirm BT, MA, FA as exempted.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-label" style="margin-top:20px">Weekly study schedule template during B.Com + ACCA years</div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Time</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr></thead>
+      <tbody>
+        <tr><td>7–9 AM</td><td colspan="5" style="text-align:center">B.Com class preparation / self-study</td><td>ACCA past papers</td><td>Rest / review week</td></tr>
+        <tr><td>College</td><td colspan="5" style="text-align:center">Attend B.Com classes</td><td>ACCA theory study</td><td>Rest</td></tr>
+        <tr><td>4–6 PM</td><td>ACCA study</td><td>B.Com assignments</td><td>ACCA study</td><td>B.Com revision</td><td>ACCA study</td><td>Mock exams</td><td>Rest</td></tr>
+        <tr><td>8–9 PM</td><td colspan="5" style="text-align:center">Financial news reading + typing practice</td><td>–</td><td>Plan next week</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="alert alert-info">
+    <h4>💡 Where to prepare for ACCA (your notes asked this)</h4>
+    <ul>
+      <li><strong>Online (Recommended — start here):</strong> OpenTuition.com (completely FREE — lecture notes + videos + forums for all papers). ACCA official website has free past papers and examiners' reports. YouTube has full free lectures for Applied Knowledge and some Applied Skills papers.</li>
+      <li><strong>Online paid (when needed for difficult papers):</strong> Kaplan Online, BPP Online — global ACCA learning partners. ₹8,000–15,000 per paper for full online course access.</li>
+      <li><strong>Offline (if available nearby):</strong> Check for ACCA-approved learning providers in Lucknow or Kanpur. Search "ACCA coaching Lucknow" or "ACCA coaching Kanpur." For difficult papers like FR, SBL — offline coaching can be helpful.</li>
+      <li><strong>Recommended approach:</strong> Start with OpenTuition free notes + ACCA past papers. If struggling on a specific paper, invest in Kaplan or BPP for that paper. No need to pay for all papers from day one.</li>
+    </ul>
+  </div>
+</div>
+
+<hr>
+
+<!-- PHASE 7: STRATEGIC PROFESSIONAL -->
+<div class="section" id="strategic">
+  <div class="phase-banner p6">
+    <div>
+      <div class="phase-num">Phase 7</div>
+      <div class="phase-title">🔬 ACCA Strategic Professional — The Final Climb</div>
+      <div class="phase-timeline">June 2031 – December 2033 (2–2.5 years)</div>
+    </div>
+  </div>
+
+  <div class="section-desc">After B.Com, you enter the final and most prestigious level of ACCA. These 4 papers (SBL, SBR, and 2 options) are the hardest. But by this point, you will have 3 years of accounting knowledge, B.Com degree, and Applied Skills under your belt. You are ready.</div>
+
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Paper</th><th>Duration</th><th>Key topics</th><th>Difficulty</th><th>When to attempt</th></tr></thead>
+      <tbody>
+        <tr><td><strong>SBL — Strategic Business Leader</strong></td><td>4 hours</td><td>Strategy (SWOT, Porter's Five Forces), corporate governance, risk management, digital technology, leadership, ethics — integrated case study</td><td><span class="badge badge-red">Very Hard</span></td><td>First — attempt in Sep or Dec 2031</td></tr>
+        <tr><td><strong>SBR — Strategic Business Reporting</strong></td><td>3.5 hours</td><td>Advanced IFRS (IFRS 9, 15, 16, 17), group accounts (consolidation), ethical dimensions of reporting</td><td><span class="badge badge-red">Very Hard</span></td><td>Second — attempt after SBL. Mar or Jun 2032</td></tr>
+        <tr><td><strong>AFM — Advanced Financial Management</strong></td><td>3.5 hours</td><td>Treasury management, advanced investment appraisal, derivatives, mergers and acquisitions, international finance</td><td><span class="badge badge-orange">Hard</span></td><td>Third — attempt Jun or Sep 2032</td></tr>
+        <tr><td><strong>ATX — Advanced Taxation</strong></td><td>3.5 hours</td><td>Complex tax planning, international taxation, tax avoidance vs evasion, ethics in taxation</td><td><span class="badge badge-orange">Hard</span></td><td>Fourth — attempt Dec 2032 or Mar 2033</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="alert alert-critical">
+    <h4>⚠️ SBL (Strategic Business Leader) — special attention required</h4>
+    <p>SBL is unlike any exam you've taken before. It is a 4-hour open-ended case study where you are given a large pre-seen case study (released weeks before the exam) plus unseen material on exam day. You must write professional-quality strategic analysis, governance reports, and ethical evaluations. It tests EVERYTHING — accounting knowledge, business strategy, leadership thinking, communication skills, and time management. Start preparing for SBL at least 4–6 months before the exam. Join ACCA SBL study groups online. Read the examiners' reports for past sittings.</p>
+  </div>
+
+  <div class="section-label" style="margin-top:20px">Practical Experience Requirement (PER) — do not neglect this</div>
+  <div class="cards">
+    <div class="card card-full">
+      <h4>What is PER and why does it matter?</h4>
+      <p style="margin-bottom:10px">To become an ACCA member (not just someone who passed exams), you must complete <strong>36 months of relevant supervised work experience</strong> in accounting/finance. Without PER, you cannot use the ACCA designation. You can accumulate PER before, during, or after your exams — so start early!</p>
+      <ul>
+        <li><strong>What counts:</strong> Any supervised role in accounting, finance, auditing, taxation, financial analysis, management accounting — even internships count</li>
+        <li><strong>What doesn't count:</strong> Unsupervised self-employment, unrelated work, data entry without accounting context</li>
+        <li><strong>How to record it:</strong> ACCA's online MyExperience portal — log performance objectives every few months, get supervisor sign-off</li>
+        <li><strong>Performance objectives:</strong> ACCA defines specific objectives you must demonstrate (e.g., "apply professional ethics," "prepare financial statements," "manage budgets")</li>
+        <li><strong>Start as early as possible:</strong> Even a summer internship in B.Com Year 1 can start your PER clock. By the time you finish Strategic Professional exams, aim to have your 36 months complete simultaneously.</li>
+        <li><strong>In Kanpur/Lucknow:</strong> Look for accounting jobs/internships at CA firms, manufacturing companies, banks, MNCs, even small businesses with proper accounts departments</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- CAREER -->
+<div class="section" id="career">
+  <div class="phase-banner p7">
+    <div>
+      <div class="phase-num">Phase 8</div>
+      <div class="phase-title">🚀 Career Launch — ACCA Membership &amp; Beyond</div>
+      <div class="phase-timeline">2033 and beyond</div>
+    </div>
+  </div>
+
+  <div class="section-desc">You are now Gungun, ACCA. These two letters after your name open doors across 180 countries. Here is what your career landscape looks like, and how to maximize it.</div>
+
+  <div class="section-label">Salary expectations in India (approximate, 2025 levels — will be higher by 2033)</div>
+  <div class="salary-grid">
+    <div class="salary-card">
+      <h5>Fresh ACCA member (0–2 years)</h5>
+      <div class="salary-range">₹5–8 LPA</div>
+      <div class="salary-role">Financial Analyst, Management Accountant, Tax Associate, Internal Auditor, Finance Executive</div>
+    </div>
+    <div class="salary-card">
+      <h5>Mid-level (3–5 years)</h5>
+      <div class="salary-range">₹12–18 LPA</div>
+      <div class="salary-role">Finance Manager, Senior Financial Analyst, Audit Manager, Senior Management Accountant</div>
+    </div>
+    <div class="salary-card">
+      <h5>Senior level (8–12 years)</h5>
+      <div class="salary-range">₹25–45 LPA</div>
+      <div class="salary-role">Financial Controller, CFO (mid-size), Finance Director, Head of Internal Audit</div>
+    </div>
+    <div class="salary-card">
+      <h5>International (UK / UAE / Singapore)</h5>
+      <div class="salary-range">£35K–60K / AED 10K–18K per month</div>
+      <div class="salary-role">Same roles internationally — ACCA is globally portable</div>
+    </div>
+  </div>
+
+  <div class="section-label" style="margin-top:24px">Top employers who actively hire ACCA members in India</div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Sector</th><th>Key Employers</th><th>Typical Role</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Big 4 Accounting Firms</strong></td><td>Deloitte, PricewaterhouseCoopers, Ernst &amp; Young (EY), KPMG</td><td>Audit associate, Tax associate, Advisory analyst — these are the most prestigious entry points</td></tr>
+        <tr><td><strong>Banking and Financial Services</strong></td><td>HSBC, Barclays, Standard Chartered, ICICI Bank, HDFC Bank, Axis Bank</td><td>Financial analyst, Risk analyst, Internal auditor, Financial reporting</td></tr>
+        <tr><td><strong>MNC Finance Departments</strong></td><td>Amazon, Microsoft, Google, Unilever, Nestle, P&amp;G, Shell, BP</td><td>Finance business partner, Management accountant, Financial controller</td></tr>
+        <tr><td><strong>Consulting Firms</strong></td><td>McKinsey, BCG, Bain (usually need MBA too), Accenture Finance</td><td>Finance consultant, CFO advisory, Financial transformation</td></tr>
+        <tr><td><strong>Mid-size companies</strong></td><td>Manufacturing, retail, hospitality, healthcare companies</td><td>CFO, Finance director — senior roles with full ownership</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-label" style="margin-top:24px">International opportunities with ACCA</div>
+  <div class="alert alert-success">
+    <h4>✅ ACCA's biggest advantage: True global portability</h4>
+    <p>Unlike the Indian CA qualification (which has very limited international recognition outside India), ACCA is recognized and respected in over 180 countries. Once you are ACCA, you can work in the UK, UAE (Dubai, Abu Dhabi), Singapore, Australia, Canada, Hong Kong, and across the EU without re-qualifying. This is the single most powerful advantage ACCA gives you over other Indian accounting qualifications. Gungun from Kanpur could be working in Dubai or London by her late 20s — this is not a dream, it is a well-trodden path that thousands of Indian ACCA members have already walked.</p>
+  </div>
+</div>
+
+<hr>
+
+<!-- RESOURCES -->
+<div class="section" id="resources">
+  <div class="section-label">Resources</div>
+  <div class="section-title">Everything you need — organized</div>
+  <div class="section-desc">A curated list of every resource you will need across all phases. Bookmark this section.</div>
+
+  <div style="margin-bottom:12px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#0d2137">Free ACCA resources (use these first — they are excellent)</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <div class="resource-icon">📖</div>
+      <div>
+        <h5>OpenTuition.com</h5>
+        <p>The #1 free resource for ACCA globally. Free lecture notes, video lectures, and forums for every single ACCA paper. Start here for every paper.</p>
+        <span class="badge badge-green">100% Free</span>
+      </div>
+    </div>
+    <div class="resource-item">
+      <div class="resource-icon">📄</div>
+      <div>
+        <h5>ACCA Official Past Papers</h5>
+        <p>Free from accaglobal.com. The single most important study material. Practice past papers compulsively — ACCA repeats question styles regularly.</p>
+        <span class="badge badge-green">100% Free</span>
+      </div>
+    </div>
+    <div class="resource-item">
+      <div class="resource-icon">🎬</div>
+      <div>
+        <h5>ACCA YouTube Channel</h5>
+        <p>ACCA's official YouTube has webinars, study tips, and technical content. Also search "ACCA [paper name] lectures" for free tutorials.</p>
+        <span class="badge badge-green">100% Free</span>
+      </div>
+    </div>
+    <div class="resource-item">
+      <div class="resource-icon">💬</div>
+      <div>
+        <h5>ACCA Student Community / Reddit</h5>
+        <p>r/ACCA on Reddit is active and helpful. Also ACCA's own student forums. Join Facebook groups: "ACCA India Students"</p>
+        <span class="badge badge-green">100% Free</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin:20px 0 12px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#0d2137">Paid resources (use when struggling on specific papers)</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <div class="resource-icon">📚</div>
+      <div>
+        <h5>Kaplan ACCA Study Materials</h5>
+        <p>Official ACCA Approved Learning Partner. Study texts, exam kits, and online courses. ₹2,000–4,000 per book, ₹8,000–15,000 for online courses per paper.</p>
+        <span class="badge badge-orange">Paid</span>
+      </div>
+    </div>
+    <div class="resource-item">
+      <div class="resource-icon">📗</div>
+      <div>
+        <h5>BPP Learning Media</h5>
+        <p>The other major ACCA Approved Publisher. Study texts and Practice &amp; Revision Kits. Similar pricing to Kaplan. Both Kaplan and BPP are equally good — pick one and stick to it.</p>
+        <span class="badge badge-orange">Paid</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin:20px 0 12px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:#0d2137">Tools and apps to build now</div>
+  <div class="resource-list">
+    <div class="resource-item">
+      <div class="resource-icon">💹</div>
+      <div>
+        <h5>Economic Times App</h5>
+        <p>Read daily — 10 minutes of financial news builds vocabulary, business context, and ACCA case study thinking. Free version is sufficient.</p>
+        <span class="badge badge-green">Free</span>
+      </div>
+    </div>
+    <div class="resource-item">
+      <div class="resource-icon">⌨️</div>
+      <div>
+        <h5>TypingClub.com</h5>
+        <p>Practice typing to reach 50+ WPM before ACCA CBE exams. All Applied Knowledge and some Applied Skills papers are computer-based — typing speed matters.</p>
+        <span class="badge badge-green">Free</span>
+      </div>
+    </div>
+    <div class="resource-item">
+      <div class="resource-icon">📊</div>
+      <div>
+        <h5>Microsoft Excel</h5>
+        <p>The core tool of every finance professional. Build Excel skills gradually. Free via college/school, or use Google Sheets (identical formulas, free).</p>
+        <span class="badge badge-green">Free/Included</span>
+      </div>
+    </div>
+    <div class="resource-item">
+      <div class="resource-icon">🧾</div>
+      <div>
+        <h5>Tally Prime Educational</h5>
+        <p>Free educational version. Learn basic accounting entries in Tally — India's most used accounting software. Essential for internships and jobs.</p>
+        <span class="badge badge-green">Free</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- FINAL NOTE -->
+<div class="section" style="padding-bottom:20px">
+  <div class="section-label">A note for Gungun</div>
+  <div class="section-title" style="font-size:22px">You are already thinking the right way</div>
+  <div style="max-width:680px">
+    <p style="font-size:15px;color:#333;line-height:1.8;margin-bottom:14px">The fact that you are mapping your career path at the age of 16, asking specific questions about subject choices, preparation strategies, and resources — this puts you ahead of 90% of students your age. Most people figure this out only after they've made several costly mistakes.</p>
+    <p style="font-size:15px;color:#333;line-height:1.8;margin-bottom:14px">The ACCA path is demanding but deeply rewarding. It takes approximately 7 years from where you are now — but those 7 years will be structured, purposeful, and skills-building at every stage. You are not just studying for exams; you are becoming a finance professional, one phase at a time.</p>
+    <p style="font-size:15px;color:#333;line-height:1.8;margin-bottom:14px">The most important thing: <strong>start the habits now</strong>. Read the Economic Times daily. Practice typing. Open Excel and learn something new each week. These small, consistent actions compound enormously over 7 years.</p>
+    <p style="font-size:15px;color:#444;line-height:1.8;background:#f0f8ff;padding:16px;border-radius:8px;border-left:4px solid #2980b9"><strong>Your goal in one sentence:</strong> B.Com degree + 9 ACCA papers + 3 years practical experience = ACCA membership = a finance career that is respected and portable across 180 countries. You can absolutely do this. Go ahead, Gungun.</p>
+  </div>
+</div>
+
+</div><!-- end content -->
+
+<div class="footer">
+  <strong>Gungun's ACCA Career Roadmap</strong> — Prepared May 2026<br>
+  Based on: 10th Class (UP Board, Science) cleared → Commerce Class 11–12 → B.Com + ACCA → ACCA Membership<br>
+  All information current as of 2025–26. Verify ACCA fees and exam structure at <strong>accaglobal.com</strong> annually as details may change.
+</div>
+
+</div><!-- end page -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navInner = document.querySelector('.nav-inner');
+  const navItems = document.querySelectorAll('.nav-item');
+
+  if(navToggle){
+    navToggle.addEventListener('click', function(){
+      navInner.classList.toggle('open');
+    });
+  }
+
+  navItems.forEach(item => {
+    item.addEventListener('click', function(){
+      navItems.forEach(i => i.classList.remove('active'));
+      this.classList.add('active');
+
+      if(window.innerWidth <= 640){
+        navInner.classList.remove('open');
+      }
+    });
+  });
+
+  const sections = document.querySelectorAll('.section[id]');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      if(window.scrollY >= sectionTop){
+        current = section.getAttribute('id');
+      }
+    });
+
+    navItems.forEach(item => {
+      item.classList.remove('active');
+      if(item.getAttribute('href') === '#' + current){
+        item.classList.add('active');
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>
